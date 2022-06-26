@@ -5,7 +5,9 @@ jobs:
   build-linux:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install libwebkit2gtk-4.0-dev xvfb -y
       - name: Build and run tests
@@ -14,13 +16,17 @@ jobs:
   build-macos:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
       - name: Build and run tests
         run: ./script/build.sh
 
   build-windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
       - name: Build and run tests
         run: ./script/build.bat
