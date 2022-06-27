@@ -1,0 +1,4 @@
+[submodule "mswebview2"]
+	path = mswebview2
+	url = https://github.com/SteffenL/mswebview2.git
+	branch = master
