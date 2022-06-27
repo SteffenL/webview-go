@@ -1,4 +1,4 @@
-[submodule "libs/webview"]
-	path = libs/webview
+[submodule "vendors/webview"]
+	path = vendors/webview
 	url = https://github.com/SteffenL/webview-nogo.git
 	branch = master
