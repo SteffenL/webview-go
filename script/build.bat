@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 echo Prepare directories...
 set script_dir=%~dp0
@@ -34,4 +35,5 @@ go build -ldflags="-H windowsgui" -o build\examples\go\bind.exe examples\bind.go
 echo Running Go tests
 cd /D %src_dir%
 set CGO_ENABLED=1
+set "PATH=%PATH%;%cd%\build"
 go test || exit \b
