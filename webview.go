@@ -1,8 +1,8 @@
 package webview
 
 /*
-#cgo CFLAGS: -Ivendor/github.com/SteffenL/webview-nogo
-#cgo CXXFLAGS: -Ivendor/github.com/SteffenL/webview-nogo -Ivendor/github.com/SteffenL/mswebview2/1.0.1150.38
+#cgo CFLAGS: -Ilibs/webview
+#cgo CXXFLAGS: -Ilibs/webview -Ilibs/mswebview2
 
 #cgo linux openbsd freebsd netbsd CXXFLAGS: -DWEBVIEW_GTK -std=c++11
 #cgo linux openbsd freebsd netbsd pkg-config: gtk+-3.0 webkit2gtk-4.0
