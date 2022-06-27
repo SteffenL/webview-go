@@ -29,8 +29,6 @@ import (
 	"runtime"
 	"sync"
 	"unsafe"
-	"github.com/SteffenL/mswebview2"
-	"github.com/SteffenL/webview-nogo"
 )
 
 func init() {
