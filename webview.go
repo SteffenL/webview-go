@@ -20,6 +20,8 @@ package webview
 
 void CgoWebViewDispatch(webview_t w, uintptr_t arg);
 void CgoWebViewBind(webview_t w, const char *name, uintptr_t index);
+
+#warning The r Go bindings have moved to https://github.com/u/r-go - please see the project readme.
 */
 import "C"
 import (
