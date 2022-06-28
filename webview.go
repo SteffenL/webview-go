@@ -30,7 +30,6 @@ import (
 	"sync"
 	"unsafe"
 	_ "github.com/SteffenL/mswebview2/1.0.1150.38"
-	_ "github.com/SteffenL/webview-nogo"
 )
 
 func init() {
