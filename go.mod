@@ -1,6 +1,6 @@
 module github.com/SteffenL/webview-go
 
-go 1.18
+go 1.14
 
 require (
 	github.com/SteffenL/mswebview2 v1.0.1150-39
