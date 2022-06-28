@@ -13,7 +13,7 @@ import (
 )
 
 func fetch_webview(libs_dir string, set_env bool, version string) {
-	lib_dir := filepath.Join(libs_dir, "webview", version)
+	lib_dir := filepath.Join(libs_dir, "webview")
 	_, err := os.Stat(filepath.Join(lib_dir, "webview.h"))
 	if err != nil || version == "master" {
 		if err == nil {
@@ -76,7 +76,7 @@ func fetch_webview(libs_dir string, set_env bool, version string) {
 }
 
 func fetch_mswebview2(libs_dir string, set_env bool, version string) {
-	lib_dir := filepath.Join(libs_dir, "mswebview2", version)
+	lib_dir := filepath.Join(libs_dir, "mswebview2")
 	_, err := os.Stat(filepath.Join(lib_dir, "Microsoft.Web.WebView2.nuspec"))
 	if err != nil || version == "latest" {
 		if err == nil {
