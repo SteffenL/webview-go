@@ -1,4 +1,5 @@
 /build/
+/libs/
 /script/Microsoft.*
 /vendor/
 *.exe
