@@ -1,8 +1,8 @@
 package webview
 
 /*
-#cgo CFLAGS: -I${SRCDIR}/libs/webview/20230820-6b27472/include
-#cgo CXXFLAGS: -I${SRCDIR}/libs/webview/20230820-6b27472/include
+#cgo CFLAGS: -I${SRCDIR}/../libs/webview/20230820-6b27472/include
+#cgo CXXFLAGS: -I${SRCDIR}/../libs/webview/20230820-6b27472/include
 
 #cgo linux openbsd freebsd netbsd CXXFLAGS: -DWEBVIEW_GTK -std=c++11
 #cgo linux openbsd freebsd netbsd pkg-config: gtk+-3.0 webkit2gtk-4.0
@@ -10,7 +10,7 @@ package webview
 #cgo darwin CXXFLAGS: -DWEBVIEW_COCOA -std=c++11
 #cgo darwin LDFLAGS: -framework WebKit
 
-#cgo windows CXXFLAGS: -DWEBVIEW_EDGE -std=c++14 -I${SRCDIR}/libs/mswebview2/1.0.622.22/include
+#cgo windows CXXFLAGS: -DWEBVIEW_EDGE -std=c++14 -I${SRCDIR}/../libs/mswebview2/1.0.622.22/include
 #cgo windows LDFLAGS: -static -ladvapi32 -lole32 -lshell32 -lshlwapi -luser32 -lversion
 
 #include "webview.h"
